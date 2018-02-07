@@ -1,24 +1,233 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Bold</string>
+            <string>AvenirNext-DemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Power_Animals_Unleashed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0J-es-0zS">
+                                <rect key="frame" x="101" y="499" width="172" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="NVC-rs-KhC"/>
+                                    <constraint firstAttribute="height" constant="65" id="R4e-TI-gIC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="Start" backgroundImage="button BG">
+                                    <color key="titleColor" red="0.40392156862745099" green="0.76862745098039209" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="SL3-bE-6Oe" kind="show" id="uDV-9C-g7I"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yak logo" translatesAutoresizingMaskIntoConstraints="NO" id="ZVR-vo-CX8">
+                                <rect key="frame" x="0.0" y="46" width="375" height="314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZVR-vo-CX8" secondAttribute="height" multiplier="375:314" id="ehh-J3-dfh"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="power animals unleashed logo" translatesAutoresizingMaskIntoConstraints="NO" id="BWa-HY-xP0">
+                                <rect key="frame" x="68" y="368" width="239" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="egh-Nf-oA8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZVR-vo-CX8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1jS-kN-lsi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h0J-es-0zS" secondAttribute="bottom" constant="103" id="7H4-m5-i2z"/>
+                            <constraint firstItem="ZVR-vo-CX8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="AUg-Sp-t3x"/>
+                            <constraint firstItem="BWa-HY-xP0" firstAttribute="top" secondItem="ZVR-vo-CX8" secondAttribute="bottom" constant="8" symbolic="YES" id="Di6-s6-PbD"/>
+                            <constraint firstItem="BWa-HY-xP0" firstAttribute="centerX" secondItem="ZVR-vo-CX8" secondAttribute="centerX" id="QEH-fr-G8d"/>
+                            <constraint firstItem="h0J-es-0zS" firstAttribute="centerX" secondItem="BWa-HY-xP0" secondAttribute="centerX" id="XUM-hp-0lM"/>
+                            <constraint firstItem="BWa-HY-xP0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="acx-4K-uPR"/>
+                            <constraint firstItem="h0J-es-0zS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="101" id="b7G-yv-P5D"/>
+                            <constraint firstItem="ZVR-vo-CX8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="jtS-go-PEc"/>
+                            <constraint firstItem="h0J-es-0zS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r1X-z5-ELa"/>
+                            <constraint firstItem="h0J-es-0zS" firstAttribute="top" secondItem="BWa-HY-xP0" secondAttribute="bottom" constant="46" id="rGy-w1-YD5"/>
+                            <constraint firstItem="ZVR-vo-CX8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xQg-fT-6i5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="OgQ-dC-I6r">
+            <objects>
+                <viewController id="SL3-bE-6Oe" customClass="SecondViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z0n-eG-VGr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="waterfalls-2565995_1280" translatesAutoresizingMaskIntoConstraints="NO" id="XaF-yj-MTm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="202"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="202" id="fB4-n2-0Oy"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZT-7a-vbz">
+                                <rect key="frame" x="96" y="544" width="184" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="8fa-Gx-ZHa"/>
+                                    <constraint firstAttribute="height" constant="67" id="UXR-PQ-VHN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                <state key="normal" title="Enter the Forest" backgroundImage="button BG">
+                                    <color key="titleColor" red="0.4039215686" green="0.76862745099999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bkc-QJ-9W7" kind="show" id="nyO-Q7-5ND"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PREPARE TO ENTER THE FOREST OF SPIRITS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVc-n7-Nhu">
+                                <rect key="frame" x="64" y="225" width="248" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="ybK-s8-BoG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In the Forest of Spirits, you will meet your Power Animal." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hht-0s-kNI">
+                                <rect key="frame" x="64" y="283" width="248" height="83"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcY-rf-2Hf">
+                                <rect key="frame" x="48" y="429" width="280" height="92"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Snd-fL-PJF">
+                                        <rect key="frame" x="0.0" y="6" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="4rR-pD-Oq4"/>
+                                            <constraint firstAttribute="height" constant="80" id="XQu-Xd-Al0"/>
+                                            <constraint firstAttribute="width" constant="80" id="eY8-Kj-cdf"/>
+                                        </constraints>
+                                        <state key="normal" image="play button"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a deep breath and listen to the waterfall before entering." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vt9-8o-c7e">
+                                        <rect key="frame" x="104" y="13" width="176" height="66"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                                        <color key="textColor" red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Vt9-8o-c7e" firstAttribute="centerY" secondItem="Snd-fL-PJF" secondAttribute="centerY" id="Rbz-hB-upi"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vt9-8o-c7e" secondAttribute="trailing" id="SsC-Gy-0Sa"/>
+                                    <constraint firstItem="Snd-fL-PJF" firstAttribute="top" secondItem="mcY-rf-2Hf" secondAttribute="top" constant="6" id="XsS-ge-wcJ"/>
+                                    <constraint firstItem="Snd-fL-PJF" firstAttribute="centerY" secondItem="mcY-rf-2Hf" secondAttribute="centerY" id="bMl-DC-7Aj"/>
+                                    <constraint firstItem="Vt9-8o-c7e" firstAttribute="top" secondItem="mcY-rf-2Hf" secondAttribute="top" constant="13" id="jUN-J9-xSd"/>
+                                    <constraint firstItem="Vt9-8o-c7e" firstAttribute="leading" secondItem="Snd-fL-PJF" secondAttribute="trailing" constant="24" id="vgb-T3-Rw2"/>
+                                    <constraint firstItem="Snd-fL-PJF" firstAttribute="leading" secondItem="mcY-rf-2Hf" secondAttribute="leading" id="xoL-GD-HAd"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Power Animal has much to teach you, but you must prepare yourself mentally and spiritually first." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kF2-Zf-Z4P">
+                                <rect key="frame" x="64" y="355" width="248" height="66"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kF2-Zf-Z4P" firstAttribute="trailing" secondItem="MVc-n7-Nhu" secondAttribute="trailing" id="2lu-Jd-fVN"/>
+                            <constraint firstItem="XaF-yj-MTm" firstAttribute="trailing" secondItem="Xfk-68-wS1" secondAttribute="trailing" id="2te-PY-heh"/>
+                            <constraint firstItem="Hht-0s-kNI" firstAttribute="top" secondItem="XaF-yj-MTm" secondAttribute="bottom" constant="81" id="3IS-pI-lUZ"/>
+                            <constraint firstItem="MVc-n7-Nhu" firstAttribute="top" secondItem="XaF-yj-MTm" secondAttribute="bottom" constant="23" id="5i5-VY-tWE"/>
+                            <constraint firstItem="XaF-yj-MTm" firstAttribute="trailing" secondItem="Xfk-68-wS1" secondAttribute="trailing" id="6Yy-uY-bYN"/>
+                            <constraint firstItem="kF2-Zf-Z4P" firstAttribute="trailing" secondItem="Hht-0s-kNI" secondAttribute="trailing" id="6kK-MI-cLW"/>
+                            <constraint firstItem="QZT-7a-vbz" firstAttribute="leading" secondItem="Xfk-68-wS1" secondAttribute="leading" constant="96" id="7NP-o8-S6k"/>
+                            <constraint firstItem="XaF-yj-MTm" firstAttribute="leading" secondItem="Xfk-68-wS1" secondAttribute="leading" id="7qb-B8-9HU"/>
+                            <constraint firstItem="XaF-yj-MTm" firstAttribute="leading" secondItem="Xfk-68-wS1" secondAttribute="leading" id="DPs-qw-F41"/>
+                            <constraint firstItem="kF2-Zf-Z4P" firstAttribute="leading" secondItem="Hht-0s-kNI" secondAttribute="leading" id="Emv-UH-W7l"/>
+                            <constraint firstItem="mcY-rf-2Hf" firstAttribute="centerX" secondItem="XaF-yj-MTm" secondAttribute="centerX" id="GHx-Wd-bjT"/>
+                            <constraint firstItem="QZT-7a-vbz" firstAttribute="top" secondItem="mcY-rf-2Hf" secondAttribute="bottom" constant="23" id="Hvt-St-ubl"/>
+                            <constraint firstItem="XaF-yj-MTm" firstAttribute="top" secondItem="Z0n-eG-VGr" secondAttribute="top" id="SX5-mH-H5q"/>
+                            <constraint firstItem="mcY-rf-2Hf" firstAttribute="leading" secondItem="Xfk-68-wS1" secondAttribute="leading" constant="48" id="TlD-wb-SUv"/>
+                            <constraint firstItem="kF2-Zf-Z4P" firstAttribute="leading" secondItem="MVc-n7-Nhu" secondAttribute="leading" id="WKF-un-Nzd"/>
+                            <constraint firstItem="XaF-yj-MTm" firstAttribute="leading" secondItem="Xfk-68-wS1" secondAttribute="leading" id="WSQ-IZ-LSo"/>
+                            <constraint firstItem="MVc-n7-Nhu" firstAttribute="leading" secondItem="Xfk-68-wS1" secondAttribute="leading" constant="64" id="dsz-r3-Yej"/>
+                            <constraint firstItem="Xfk-68-wS1" firstAttribute="bottom" secondItem="QZT-7a-vbz" secondAttribute="bottom" constant="56" id="e3d-Zm-0B6"/>
+                            <constraint firstItem="mcY-rf-2Hf" firstAttribute="top" secondItem="kF2-Zf-Z4P" secondAttribute="bottom" constant="8" symbolic="YES" id="fbi-gR-HeR"/>
+                            <constraint firstItem="kF2-Zf-Z4P" firstAttribute="top" secondItem="MVc-n7-Nhu" secondAttribute="bottom" constant="58" id="g2f-9P-A3t"/>
+                            <constraint firstItem="mcY-rf-2Hf" firstAttribute="top" secondItem="Z0n-eG-VGr" secondAttribute="top" constant="429" id="jyJ-ET-98d"/>
+                            <constraint firstItem="XaF-yj-MTm" firstAttribute="trailing" secondItem="Xfk-68-wS1" secondAttribute="trailing" id="lby-wl-Av6"/>
+                            <constraint firstAttribute="bottom" secondItem="mcY-rf-2Hf" secondAttribute="bottom" constant="146" id="o8r-ov-R3G"/>
+                            <constraint firstItem="mcY-rf-2Hf" firstAttribute="top" secondItem="Hht-0s-kNI" secondAttribute="bottom" constant="63" id="wWW-zj-vyA"/>
+                            <constraint firstItem="XaF-yj-MTm" firstAttribute="top" secondItem="Z0n-eG-VGr" secondAttribute="top" id="wrX-iZ-zVy"/>
+                            <constraint firstItem="XaF-yj-MTm" firstAttribute="top" secondItem="Z0n-eG-VGr" secondAttribute="top" id="y2P-Ql-PSV"/>
+                            <constraint firstItem="Hht-0s-kNI" firstAttribute="centerX" secondItem="mcY-rf-2Hf" secondAttribute="centerX" id="zFn-SN-f6a"/>
+                            <constraint firstItem="QZT-7a-vbz" firstAttribute="centerX" secondItem="mcY-rf-2Hf" secondAttribute="centerX" id="zrQ-5y-HM8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xfk-68-wS1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O8b-bK-bw3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789.60000000000002" y="117.39130434782609"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jF3-24-APN">
+            <objects>
+                <viewController id="bkc-QJ-9W7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J9Q-6M-RdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="WCn-vs-LwS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jAP-Bs-gMp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1447" y="117"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="R4V-5b-gtv">
+            <objects>
+                <viewController id="Jo2-5M-8Cn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XMj-GL-luH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="vNB-ye-Wwe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ud-r1-EYd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2110" y="116"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button BG" width="370" height="140"/>
+        <image name="play button" width="152" height="152"/>
+        <image name="power animals unleashed logo" width="462" height="96"/>
+        <image name="waterfalls-2565995_1280" width="1280" height="681"/>
+        <image name="yak logo" width="750" height="577"/>
+    </resources>
 </document>

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		047DFBE95935347CC523D22B /* Pods_Power_Animals_UnleashedUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E1C66724E3CD6EE66FEBFAC /* Pods_Power_Animals_UnleashedUITests.framework */; };
+		1953958D8698C4335F95C819 /* Pods_Power_Animals_UnleashedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE8274CD5D26702B98EB1AD /* Pods_Power_Animals_UnleashedTests.framework */; };
+		5A39FDA5F1B4D91C3BE92553 /* Pods_Power_Animals_Unleashed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD38B60F51C72BB501E336E /* Pods_Power_Animals_Unleashed.framework */; };
 		94CAF7CC2024F60C00D3660F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAF7CB2024F60C00D3660F /* AppDelegate.swift */; };
 		94CAF7CE2024F60C00D3660F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAF7CD2024F60C00D3660F /* ViewController.swift */; };
 		94CAF7D12024F60C00D3660F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CAF7CF2024F60C00D3660F /* Main.storyboard */; };
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1022594D6F3CB04B1E940D3F /* Pods-Power Animals UnleashedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Power Animals UnleashedTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Power Animals UnleashedTests/Pods-Power Animals UnleashedTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E1F04A99BA1C79C56D0BA47 /* Pods-Power Animals Unleashed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Power Animals Unleashed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Power Animals Unleashed/Pods-Power Animals Unleashed.debug.xcconfig"; sourceTree = "<group>"; };
 		94CAF7C82024F60C00D3660F /* Power Animals Unleashed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Power Animals Unleashed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CAF7CB2024F60C00D3660F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94CAF7CD2024F60C00D3660F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,13 @@
 		94CAF7E72024F60C00D3660F /* Power Animals UnleashedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Power Animals UnleashedUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CAF7EB2024F60C00D3660F /* Power_Animals_UnleashedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Power_Animals_UnleashedUITests.swift; sourceTree = "<group>"; };
 		94CAF7ED2024F60C00D3660F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CE8274CD5D26702B98EB1AD /* Pods_Power_Animals_UnleashedTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Power_Animals_UnleashedTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E1C66724E3CD6EE66FEBFAC /* Pods_Power_Animals_UnleashedUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Power_Animals_UnleashedUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B95EEB684462E3A238D81757 /* Pods-Power Animals UnleashedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Power Animals UnleashedTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Power Animals UnleashedTests/Pods-Power Animals UnleashedTests.release.xcconfig"; sourceTree = "<group>"; };
+		C0030582B4BA6CCDD209A1B4 /* Pods-Power Animals Unleashed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Power Animals Unleashed.release.xcconfig"; path = "Pods/Target Support Files/Pods-Power Animals Unleashed/Pods-Power Animals Unleashed.release.xcconfig"; sourceTree = "<group>"; };
+		CDD38B60F51C72BB501E336E /* Pods_Power_Animals_Unleashed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Power_Animals_Unleashed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D059402E66A74F577F0233B2 /* Pods-Power Animals UnleashedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Power Animals UnleashedUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Power Animals UnleashedUITests/Pods-Power Animals UnleashedUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E85275B5727D9B04459BB059 /* Pods-Power Animals UnleashedUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Power Animals UnleashedUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Power Animals UnleashedUITests/Pods-Power Animals UnleashedUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A39FDA5F1B4D91C3BE92553 /* Pods_Power_Animals_Unleashed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1953958D8698C4335F95C819 /* Pods_Power_Animals_UnleashedTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047DFBE95935347CC523D22B /* Pods_Power_Animals_UnleashedUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				94CAF7DF2024F60C00D3660F /* Power Animals UnleashedTests */,
 				94CAF7EA2024F60C00D3660F /* Power Animals UnleashedUITests */,
 				94CAF7C92024F60C00D3660F /* Products */,
+				EFB60881F61F5D00D1042F38 /* Pods */,
+				BE53583A09F505FFE6C7E9AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = "Power Animals UnleashedUITests";
 			sourceTree = "<group>";
 		};
+		BE53583A09F505FFE6C7E9AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDD38B60F51C72BB501E336E /* Pods_Power_Animals_Unleashed.framework */,
+				9CE8274CD5D26702B98EB1AD /* Pods_Power_Animals_UnleashedTests.framework */,
+				9E1C66724E3CD6EE66FEBFAC /* Pods_Power_Animals_UnleashedUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFB60881F61F5D00D1042F38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E1F04A99BA1C79C56D0BA47 /* Pods-Power Animals Unleashed.debug.xcconfig */,
+				C0030582B4BA6CCDD209A1B4 /* Pods-Power Animals Unleashed.release.xcconfig */,
+				1022594D6F3CB04B1E940D3F /* Pods-Power Animals UnleashedTests.debug.xcconfig */,
+				B95EEB684462E3A238D81757 /* Pods-Power Animals UnleashedTests.release.xcconfig */,
+				E85275B5727D9B04459BB059 /* Pods-Power Animals UnleashedUITests.debug.xcconfig */,
+				D059402E66A74F577F0233B2 /* Pods-Power Animals UnleashedUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94CAF7F02024F60C00D3660F /* Build configuration list for PBXNativeTarget "Power Animals Unleashed" */;
 			buildPhases = (
+				34CBC3EC97E875B439211A30 /* [CP] Check Pods Manifest.lock */,
 				94CAF7C42024F60C00D3660F /* Sources */,
 				94CAF7C52024F60C00D3660F /* Frameworks */,
 				94CAF7C62024F60C00D3660F /* Resources */,
+				C7C1774B3665F9B629D6061F /* [CP] Embed Pods Frameworks */,
+				E0CE0EF3E2219C8055FB7D25 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94CAF7F32024F60C00D3660F /* Build configuration list for PBXNativeTarget "Power Animals UnleashedTests" */;
 			buildPhases = (
+				ECF941B038F72C7A3DA12B4C /* [CP] Check Pods Manifest.lock */,
 				94CAF7D82024F60C00D3660F /* Sources */,
 				94CAF7D92024F60C00D3660F /* Frameworks */,
 				94CAF7DA2024F60C00D3660F /* Resources */,
+				E63DDB1D0942BC15E247AA16 /* [CP] Embed Pods Frameworks */,
+				3280F0FFFC68EE4286057B78 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94CAF7F62024F60C00D3660F /* Build configuration list for PBXNativeTarget "Power Animals UnleashedUITests" */;
 			buildPhases = (
+				0FB0A22CC1D7AC70B1A467E8 /* [CP] Check Pods Manifest.lock */,
 				94CAF7E32024F60C00D3660F /* Sources */,
 				94CAF7E42024F60C00D3660F /* Frameworks */,
 				94CAF7E52024F60C00D3660F /* Resources */,
+				277A6BB1A99E21EE7B312D3A /* [CP] Embed Pods Frameworks */,
+				B255BFC39EAD25FCAD7E0D0E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,166 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FB0A22CC1D7AC70B1A467E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Power Animals UnleashedUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		277A6BB1A99E21EE7B312D3A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Power Animals UnleashedUITests/Pods-Power Animals UnleashedUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3280F0FFFC68EE4286057B78 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Power Animals UnleashedTests/Pods-Power Animals UnleashedTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34CBC3EC97E875B439211A30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Power Animals Unleashed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B255BFC39EAD25FCAD7E0D0E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Power Animals UnleashedUITests/Pods-Power Animals UnleashedUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7C1774B3665F9B629D6061F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Power Animals Unleashed/Pods-Power Animals Unleashed-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Power Animals Unleashed/Pods-Power Animals Unleashed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0CE0EF3E2219C8055FB7D25 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Power Animals Unleashed/Pods-Power Animals Unleashed-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E63DDB1D0942BC15E247AA16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Power Animals UnleashedTests/Pods-Power Animals UnleashedTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECF941B038F72C7A3DA12B4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Power Animals UnleashedTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		94CAF7C42024F60C00D3660F /* Sources */ = {
@@ -424,6 +633,7 @@
 		};
 		94CAF7F12024F60C00D3660F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E1F04A99BA1C79C56D0BA47 /* Pods-Power Animals Unleashed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +648,7 @@
 		};
 		94CAF7F22024F60C00D3660F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0030582B4BA6CCDD209A1B4 /* Pods-Power Animals Unleashed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +663,7 @@
 		};
 		94CAF7F42024F60C00D3660F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1022594D6F3CB04B1E940D3F /* Pods-Power Animals UnleashedTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +680,7 @@
 		};
 		94CAF7F52024F60C00D3660F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B95EEB684462E3A238D81757 /* Pods-Power Animals UnleashedTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +697,7 @@
 		};
 		94CAF7F72024F60C00D3660F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E85275B5727D9B04459BB059 /* Pods-Power Animals UnleashedUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +713,7 @@
 		};
 		94CAF7F82024F60C00D3660F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D059402E66A74F577F0233B2 /* Pods-Power Animals UnleashedUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
