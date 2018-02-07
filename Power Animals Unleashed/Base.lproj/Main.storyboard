@@ -25,20 +25,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0J-es-0zS">
-                                <rect key="frame" x="101" y="499" width="172" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="172" id="NVC-rs-KhC"/>
-                                    <constraint firstAttribute="height" constant="65" id="R4e-TI-gIC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
-                                <state key="normal" title="Start" backgroundImage="button BG">
-                                    <color key="titleColor" red="0.40392156862745099" green="0.76862745098039209" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="SL3-bE-6Oe" kind="show" id="uDV-9C-g7I"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yak logo" translatesAutoresizingMaskIntoConstraints="NO" id="ZVR-vo-CX8">
                                 <rect key="frame" x="0.0" y="46" width="375" height="314"/>
                                 <constraints>
@@ -51,20 +37,28 @@
                                     <constraint firstAttribute="height" constant="85" id="egh-Nf-oA8"/>
                                 </constraints>
                             </imageView>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTN-Mr-HF1">
+                                <rect key="frame" x="62" y="487" width="252" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="googlebutton2x"/>
+                                <connections>
+                                    <action selector="googleSignInClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BsJ-de-y1H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9L-A5-0WE">
+                                <rect key="frame" x="62" y="554" width="252" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="facebookbutton2x"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ZVR-vo-CX8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1jS-kN-lsi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h0J-es-0zS" secondAttribute="bottom" constant="103" id="7H4-m5-i2z"/>
                             <constraint firstItem="ZVR-vo-CX8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="AUg-Sp-t3x"/>
                             <constraint firstItem="BWa-HY-xP0" firstAttribute="top" secondItem="ZVR-vo-CX8" secondAttribute="bottom" constant="8" symbolic="YES" id="Di6-s6-PbD"/>
                             <constraint firstItem="BWa-HY-xP0" firstAttribute="centerX" secondItem="ZVR-vo-CX8" secondAttribute="centerX" id="QEH-fr-G8d"/>
-                            <constraint firstItem="h0J-es-0zS" firstAttribute="centerX" secondItem="BWa-HY-xP0" secondAttribute="centerX" id="XUM-hp-0lM"/>
                             <constraint firstItem="BWa-HY-xP0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="acx-4K-uPR"/>
-                            <constraint firstItem="h0J-es-0zS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="101" id="b7G-yv-P5D"/>
                             <constraint firstItem="ZVR-vo-CX8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="jtS-go-PEc"/>
-                            <constraint firstItem="h0J-es-0zS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r1X-z5-ELa"/>
-                            <constraint firstItem="h0J-es-0zS" firstAttribute="top" secondItem="BWa-HY-xP0" secondAttribute="bottom" constant="46" id="rGy-w1-YD5"/>
                             <constraint firstItem="ZVR-vo-CX8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xQg-fT-6i5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -73,6 +67,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+        <!--Register Screen-->
+        <scene sceneID="HEW-ZL-MyZ">
+            <objects>
+                <viewController id="XnD-vB-ofG" customClass="RegisterScreen" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nFc-Ur-pjg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="NT9-Ek-Yxb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GVp-jE-hpr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789.60000000000002" y="-618.44077961019491"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="OgQ-dC-I6r">
@@ -205,7 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jAP-Bs-gMp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1447" y="117"/>
+            <point key="canvasLocation" x="1586" y="136"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="R4V-5b-gtv">
@@ -225,6 +234,8 @@
     </scenes>
     <resources>
         <image name="button BG" width="370" height="140"/>
+        <image name="facebookbutton2x" width="252" height="48"/>
+        <image name="googlebutton2x" width="252" height="48"/>
         <image name="play button" width="152" height="152"/>
         <image name="power animals unleashed logo" width="462" height="96"/>
         <image name="waterfalls-2565995_1280" width="1280" height="681"/>

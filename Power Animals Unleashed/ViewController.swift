@@ -7,12 +7,37 @@
 //
 
 import UIKit
+import Firebase
+import GoogleSignIn
 
-class ViewController: UIViewController {
+
+// ...
+
+
+class ViewController: UIViewController, GIDSignInUIDelegate {
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+       
+        guard let authentication = user.authentication else { return }
+        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+                                                       accessToken: authentication.accessToken)
+        
+        Auth.auth().signIn(with: credential) { (user, error) in
+            if let error = error {
+                // ...
+                return
+            }
+            print("User is signed in")
+            // ...
+        }
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().signIn()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +45,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func googleSignInClicked(_ sender: Any) {
+        GIDSignIn.sharedInstance().signIn()
+        
+    }
+    
+    
+    
+
 
 }
+    
+    
+    
+
 
