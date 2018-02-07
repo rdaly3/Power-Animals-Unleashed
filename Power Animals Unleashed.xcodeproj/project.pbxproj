@@ -17,6 +17,8 @@
 		94CAF7D62024F60C00D3660F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CAF7D42024F60C00D3660F /* LaunchScreen.storyboard */; };
 		94CAF7E12024F60C00D3660F /* Power_Animals_UnleashedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAF7E02024F60C00D3660F /* Power_Animals_UnleashedTests.swift */; };
 		94CAF7EC2024F60C00D3660F /* Power_Animals_UnleashedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAF7EB2024F60C00D3660F /* Power_Animals_UnleashedUITests.swift */; };
+		C38AB8AB202BABD3000664ED /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = C38AB8AA202BABD3000664ED /* GoogleService-Info (1).plist */; };
+		C38AB8AD202BB09D000664ED /* EnterTheForest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38AB8AC202BB09D000664ED /* EnterTheForest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		9E1C66724E3CD6EE66FEBFAC /* Pods_Power_Animals_UnleashedUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Power_Animals_UnleashedUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B95EEB684462E3A238D81757 /* Pods-Power Animals UnleashedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Power Animals UnleashedTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Power Animals UnleashedTests/Pods-Power Animals UnleashedTests.release.xcconfig"; sourceTree = "<group>"; };
 		C0030582B4BA6CCDD209A1B4 /* Pods-Power Animals Unleashed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Power Animals Unleashed.release.xcconfig"; path = "Pods/Target Support Files/Pods-Power Animals Unleashed/Pods-Power Animals Unleashed.release.xcconfig"; sourceTree = "<group>"; };
+		C38AB8AA202BABD3000664ED /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		C38AB8AC202BB09D000664ED /* EnterTheForest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterTheForest.swift; sourceTree = "<group>"; };
 		CDD38B60F51C72BB501E336E /* Pods_Power_Animals_Unleashed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Power_Animals_Unleashed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D059402E66A74F577F0233B2 /* Pods-Power Animals UnleashedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Power Animals UnleashedUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Power Animals UnleashedUITests/Pods-Power Animals UnleashedUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E85275B5727D9B04459BB059 /* Pods-Power Animals UnleashedUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Power Animals UnleashedUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Power Animals UnleashedUITests/Pods-Power Animals UnleashedUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,7 +123,9 @@
 				94CAF7CF2024F60C00D3660F /* Main.storyboard */,
 				94CAF7D22024F60C00D3660F /* Assets.xcassets */,
 				94CAF7D42024F60C00D3660F /* LaunchScreen.storyboard */,
+				C38AB8AA202BABD3000664ED /* GoogleService-Info (1).plist */,
 				94CAF7D72024F60C00D3660F /* Info.plist */,
+				C38AB8AC202BB09D000664ED /* EnterTheForest.swift */,
 			);
 			path = "Power Animals Unleashed";
 			sourceTree = "<group>";
@@ -284,6 +290,7 @@
 				94CAF7D62024F60C00D3660F /* LaunchScreen.storyboard in Resources */,
 				94CAF7D32024F60C00D3660F /* Assets.xcassets in Resources */,
 				94CAF7D12024F60C00D3660F /* Main.storyboard in Resources */,
+				C38AB8AB202BABD3000664ED /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +477,7 @@
 			files = (
 				94CAF7CE2024F60C00D3660F /* ViewController.swift in Sources */,
 				94CAF7CC2024F60C00D3660F /* AppDelegate.swift in Sources */,
+				C38AB8AD202BB09D000664ED /* EnterTheForest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
