@@ -14,29 +14,16 @@ import GoogleSignIn
 // ...
 
 
-class ViewController: UIViewController, GIDSignInUIDelegate {
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-       
-        guard let authentication = user.authentication else { return }
-        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
-                                                       accessToken: authentication.accessToken)
-        
-        Auth.auth().signIn(with: credential) { (user, error) in
-            if let error = error {
-                // ...
-                return
-            }
-            print("User is signed in")
-            // ...
-        }
-    }
+class ViewController: UIViewController,GIDSignInUIDelegate {
+    
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         GIDSignIn.sharedInstance().uiDelegate = self
-        GIDSignIn.sharedInstance().signIn()
+        GIDSignIn.sharedInstance().clientID = "1078301837907-j82qjbtscjrbjd407hkuouj24mnkhnbu.apps.googleusercontent.com"
+        
+        GIDSignIn.sharedInstance().signInSilently()
         
     }
 
@@ -47,6 +34,8 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
 
     @IBAction func googleSignInClicked(_ sender: Any) {
         GIDSignIn.sharedInstance().signIn()
+        
+        
         
     }
     
