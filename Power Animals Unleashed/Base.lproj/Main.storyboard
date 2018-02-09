@@ -130,11 +130,15 @@
                                             <constraint firstAttribute="width" constant="80" id="oZL-dE-kcs"/>
                                         </constraints>
                                         <state key="normal" image="play button"/>
+                                        <connections>
+                                            <action selector="playButton:" destination="SL3-bE-6Oe" eventType="touchUpInside" id="Tvw-Uj-Wte"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Take a deep breath and listen to the waterfall before entering." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vt9-8o-c7e">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a deep breath and listen to the waterfall before entering." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vt9-8o-c7e">
                                         <rect key="frame" x="115" y="13" width="165" height="66"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="66" id="akA-Ls-ZD9"/>
+                                            <constraint firstAttribute="width" constant="165" id="ul7-oc-7BB"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
                                         <color key="textColor" red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
@@ -146,6 +150,7 @@
                                     <constraint firstAttribute="trailing" secondItem="Vt9-8o-c7e" secondAttribute="trailing" id="SsC-Gy-0Sa"/>
                                     <constraint firstItem="Snd-fL-PJF" firstAttribute="leading" secondItem="mcY-rf-2Hf" secondAttribute="leading" id="Uym-71-dfD"/>
                                     <constraint firstAttribute="trailing" secondItem="Vt9-8o-c7e" secondAttribute="trailing" id="iIX-uz-Qjr"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vt9-8o-c7e" secondAttribute="trailing" id="iJ2-wj-HZF"/>
                                     <constraint firstItem="Vt9-8o-c7e" firstAttribute="top" secondItem="mcY-rf-2Hf" secondAttribute="top" constant="13" id="jUN-J9-xSd"/>
                                     <constraint firstItem="Vt9-8o-c7e" firstAttribute="centerY" secondItem="mcY-rf-2Hf" secondAttribute="centerY" id="uMp-LL-He6"/>
                                     <constraint firstItem="Snd-fL-PJF" firstAttribute="centerY" secondItem="mcY-rf-2Hf" secondAttribute="centerY" id="yG8-mT-Db9"/>
@@ -302,6 +307,6 @@
         <image name="yak logo" width="750" height="577"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="r7O-sc-GXV"/>
+        <segue reference="nyO-Q7-5ND"/>
     </inferredMetricsTieBreakers>
 </document>

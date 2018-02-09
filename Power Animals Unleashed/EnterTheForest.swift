@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
 
 class EnterTheForest: UIViewController {
 
+    var player: AVAudioPlayer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,18 +24,33 @@ class EnterTheForest: UIViewController {
     
     @IBAction func enterForestPressed(_ sender: UIButton) {
         
-        
+        player?.setVolume(0, fadeDuration: 1.5)
+    
         
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func playButton(_ sender: UIButton) {
+        playSound()
     }
-    */
+    
+    
+    func playSound() {
+        let path = Bundle.main.path(forResource: "waterfall.mp3", ofType:nil)!
+        let url = URL(fileURLWithPath: path)
+        
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            player?.play()
+        } catch {
+            print("couldn't load file :(")
+        }
+    }
+    
+    
+    
+    
+    
+    
 
 }

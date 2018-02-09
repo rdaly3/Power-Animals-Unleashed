@@ -19,6 +19,7 @@
 		94CAF7EC2024F60C00D3660F /* Power_Animals_UnleashedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAF7EB2024F60C00D3660F /* Power_Animals_UnleashedUITests.swift */; };
 		C3BB9012202D424200B692F0 /* PowerAnimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB9011202D424200B692F0 /* PowerAnimal.swift */; };
 		C3BB9016202D4C1700B692F0 /* Swift+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB9015202D4C1700B692F0 /* Swift+Gif.swift */; };
+		C3BB901A202D540A00B692F0 /* waterfall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3BB9019202D540900B692F0 /* waterfall.mp3 */; };
 		C3E5173D202CD84E00878C2E /* EnterTheForest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E5173C202CD84E00878C2E /* EnterTheForest.swift */; };
 		C3E51743202CF8F800878C2E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3E51742202CF8F800878C2E /* GoogleService-Info.plist */; };
 		C3E51745202CFE0C00878C2E /* TheForest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E51744202CFE0C00878C2E /* TheForest.swift */; };
@@ -63,6 +64,7 @@
 		C0030582B4BA6CCDD209A1B4 /* Pods-Power Animals Unleashed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Power Animals Unleashed.release.xcconfig"; path = "Pods/Target Support Files/Pods-Power Animals Unleashed/Pods-Power Animals Unleashed.release.xcconfig"; sourceTree = "<group>"; };
 		C3BB9011202D424200B692F0 /* PowerAnimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerAnimal.swift; sourceTree = "<group>"; };
 		C3BB9015202D4C1700B692F0 /* Swift+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Gif.swift"; sourceTree = "<group>"; };
+		C3BB9019202D540900B692F0 /* waterfall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = waterfall.mp3; path = "Power Animals Unleashed/Assets.xcassets/waterfall.dataset/waterfall.mp3"; sourceTree = "<group>"; };
 		C3E5173C202CD84E00878C2E /* EnterTheForest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterTheForest.swift; sourceTree = "<group>"; };
 		C3E51742202CF8F800878C2E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C3E51744202CFE0C00878C2E /* TheForest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheForest.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		94CAF7BF2024F60C00D3660F = {
 			isa = PBXGroup;
 			children = (
+				C3BB9019202D540900B692F0 /* waterfall.mp3 */,
 				94CAF7CA2024F60C00D3660F /* Power Animals Unleashed */,
 				94CAF7DF2024F60C00D3660F /* Power Animals UnleashedTests */,
 				94CAF7EA2024F60C00D3660F /* Power Animals UnleashedUITests */,
@@ -296,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3BB901A202D540A00B692F0 /* waterfall.mp3 in Resources */,
 				94CAF7D62024F60C00D3660F /* LaunchScreen.storyboard in Resources */,
 				C3E51743202CF8F800878C2E /* GoogleService-Info.plist in Resources */,
 				94CAF7D32024F60C00D3660F /* Assets.xcassets in Resources */,
