@@ -17,7 +17,11 @@
 		94CAF7D62024F60C00D3660F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CAF7D42024F60C00D3660F /* LaunchScreen.storyboard */; };
 		94CAF7E12024F60C00D3660F /* Power_Animals_UnleashedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAF7E02024F60C00D3660F /* Power_Animals_UnleashedTests.swift */; };
 		94CAF7EC2024F60C00D3660F /* Power_Animals_UnleashedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAF7EB2024F60C00D3660F /* Power_Animals_UnleashedUITests.swift */; };
-		C37DBABA202AD416005F2A4B /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = C37DBAB9202AD416005F2A4B /* GoogleService-Info (1).plist */; };
+		C3BB9012202D424200B692F0 /* PowerAnimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB9011202D424200B692F0 /* PowerAnimal.swift */; };
+		C3BB9016202D4C1700B692F0 /* Swift+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB9015202D4C1700B692F0 /* Swift+Gif.swift */; };
+		C3E5173D202CD84E00878C2E /* EnterTheForest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E5173C202CD84E00878C2E /* EnterTheForest.swift */; };
+		C3E51743202CF8F800878C2E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3E51742202CF8F800878C2E /* GoogleService-Info.plist */; };
+		C3E51745202CFE0C00878C2E /* TheForest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E51744202CFE0C00878C2E /* TheForest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +61,11 @@
 		9E1C66724E3CD6EE66FEBFAC /* Pods_Power_Animals_UnleashedUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Power_Animals_UnleashedUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B95EEB684462E3A238D81757 /* Pods-Power Animals UnleashedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Power Animals UnleashedTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Power Animals UnleashedTests/Pods-Power Animals UnleashedTests.release.xcconfig"; sourceTree = "<group>"; };
 		C0030582B4BA6CCDD209A1B4 /* Pods-Power Animals Unleashed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Power Animals Unleashed.release.xcconfig"; path = "Pods/Target Support Files/Pods-Power Animals Unleashed/Pods-Power Animals Unleashed.release.xcconfig"; sourceTree = "<group>"; };
-		C37DBAB9202AD416005F2A4B /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		C3BB9011202D424200B692F0 /* PowerAnimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerAnimal.swift; sourceTree = "<group>"; };
+		C3BB9015202D4C1700B692F0 /* Swift+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Gif.swift"; sourceTree = "<group>"; };
+		C3E5173C202CD84E00878C2E /* EnterTheForest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterTheForest.swift; sourceTree = "<group>"; };
+		C3E51742202CF8F800878C2E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C3E51744202CFE0C00878C2E /* TheForest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheForest.swift; sourceTree = "<group>"; };
 		CDD38B60F51C72BB501E336E /* Pods_Power_Animals_Unleashed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Power_Animals_Unleashed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D059402E66A74F577F0233B2 /* Pods-Power Animals UnleashedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Power Animals UnleashedUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Power Animals UnleashedUITests/Pods-Power Animals UnleashedUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E85275B5727D9B04459BB059 /* Pods-Power Animals UnleashedUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Power Animals UnleashedUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Power Animals UnleashedUITests/Pods-Power Animals UnleashedUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,7 +130,11 @@
 				94CAF7D22024F60C00D3660F /* Assets.xcassets */,
 				94CAF7D42024F60C00D3660F /* LaunchScreen.storyboard */,
 				94CAF7D72024F60C00D3660F /* Info.plist */,
-				C37DBAB9202AD416005F2A4B /* GoogleService-Info (1).plist */,
+				C3E51742202CF8F800878C2E /* GoogleService-Info.plist */,
+				C3E5173C202CD84E00878C2E /* EnterTheForest.swift */,
+				C3E51744202CFE0C00878C2E /* TheForest.swift */,
+				C3BB9011202D424200B692F0 /* PowerAnimal.swift */,
+				C3BB9015202D4C1700B692F0 /* Swift+Gif.swift */,
 			);
 			path = "Power Animals Unleashed";
 			sourceTree = "<group>";
@@ -285,9 +297,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				94CAF7D62024F60C00D3660F /* LaunchScreen.storyboard in Resources */,
+				C3E51743202CF8F800878C2E /* GoogleService-Info.plist in Resources */,
 				94CAF7D32024F60C00D3660F /* Assets.xcassets in Resources */,
 				94CAF7D12024F60C00D3660F /* Main.storyboard in Resources */,
-				C37DBABA202AD416005F2A4B /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +491,10 @@
 			files = (
 				94CAF7CE2024F60C00D3660F /* ViewController.swift in Sources */,
 				94CAF7CC2024F60C00D3660F /* AppDelegate.swift in Sources */,
+				C3E51745202CFE0C00878C2E /* TheForest.swift in Sources */,
+				C3E5173D202CD84E00878C2E /* EnterTheForest.swift in Sources */,
+				C3BB9016202D4C1700B692F0 /* Swift+Gif.swift in Sources */,
+				C3BB9012202D424200B692F0 /* PowerAnimal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

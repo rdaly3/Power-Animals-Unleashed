@@ -37,18 +37,12 @@
                                     <constraint firstAttribute="height" constant="85" id="egh-Nf-oA8"/>
                                 </constraints>
                             </imageView>
-                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTN-Mr-HF1">
-                                <rect key="frame" x="62" y="487" width="252" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTN-Mr-HF1">
+                                <rect key="frame" x="61" y="524" width="252" height="48"/>
                                 <state key="normal" title="Button" image="googlebutton2x"/>
                                 <connections>
                                     <action selector="googleSignInClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BsJ-de-y1H"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9L-A5-0WE">
-                                <rect key="frame" x="62" y="554" width="252" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="facebookbutton2x"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -56,7 +50,10 @@
                             <constraint firstItem="ZVR-vo-CX8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1jS-kN-lsi"/>
                             <constraint firstItem="ZVR-vo-CX8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="AUg-Sp-t3x"/>
                             <constraint firstItem="BWa-HY-xP0" firstAttribute="top" secondItem="ZVR-vo-CX8" secondAttribute="bottom" constant="8" symbolic="YES" id="Di6-s6-PbD"/>
+                            <constraint firstItem="XTN-Mr-HF1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="OTz-ln-dtU"/>
                             <constraint firstItem="BWa-HY-xP0" firstAttribute="centerX" secondItem="ZVR-vo-CX8" secondAttribute="centerX" id="QEH-fr-G8d"/>
+                            <constraint firstItem="XTN-Mr-HF1" firstAttribute="top" secondItem="BWa-HY-xP0" secondAttribute="bottom" constant="71" id="UIh-qV-mIz"/>
+                            <constraint firstItem="XTN-Mr-HF1" firstAttribute="centerX" secondItem="BWa-HY-xP0" secondAttribute="centerX" id="XXH-17-Lkt"/>
                             <constraint firstItem="BWa-HY-xP0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="acx-4K-uPR"/>
                             <constraint firstItem="ZVR-vo-CX8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="jtS-go-PEc"/>
                             <constraint firstItem="ZVR-vo-CX8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xQg-fT-6i5"/>
@@ -83,10 +80,10 @@
             </objects>
             <point key="canvasLocation" x="789.60000000000002" y="-618.44077961019491"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Enter The Forest-->
         <scene sceneID="OgQ-dC-I6r">
             <objects>
-                <viewController id="SL3-bE-6Oe" customClass="SecondViewController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="EnterTheForest" storyboardIdentifier="EnterTheForest" id="SL3-bE-6Oe" customClass="EnterTheForest" customModule="Power_Animals_Unleashed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z0n-eG-VGr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,15 +96,12 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZT-7a-vbz">
                                 <rect key="frame" x="96" y="544" width="184" height="67"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="184" id="8fa-Gx-ZHa"/>
-                                    <constraint firstAttribute="height" constant="67" id="UXR-PQ-VHN"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
                                 <state key="normal" title="Enter the Forest" backgroundImage="button BG">
                                     <color key="titleColor" red="0.4039215686" green="0.76862745099999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="enterForestPressed:" destination="SL3-bE-6Oe" eventType="touchUpInside" id="YPR-uY-0G9"/>
                                     <segue destination="bkc-QJ-9W7" kind="show" id="nyO-Q7-5ND"/>
                                 </connections>
                             </button>
@@ -132,14 +126,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Snd-fL-PJF">
                                         <rect key="frame" x="0.0" y="6" width="80" height="80"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="4rR-pD-Oq4"/>
-                                            <constraint firstAttribute="height" constant="80" id="XQu-Xd-Al0"/>
-                                            <constraint firstAttribute="width" constant="80" id="eY8-Kj-cdf"/>
+                                            <constraint firstAttribute="height" constant="80" id="3Xe-UA-N4o"/>
+                                            <constraint firstAttribute="width" constant="80" id="oZL-dE-kcs"/>
                                         </constraints>
                                         <state key="normal" image="play button"/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a deep breath and listen to the waterfall before entering." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vt9-8o-c7e">
-                                        <rect key="frame" x="104" y="13" width="176" height="66"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Take a deep breath and listen to the waterfall before entering." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vt9-8o-c7e">
+                                        <rect key="frame" x="115" y="13" width="165" height="66"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="akA-Ls-ZD9"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
                                         <color key="textColor" red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -147,13 +143,12 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="Vt9-8o-c7e" firstAttribute="centerY" secondItem="Snd-fL-PJF" secondAttribute="centerY" id="Rbz-hB-upi"/>
                                     <constraint firstAttribute="trailing" secondItem="Vt9-8o-c7e" secondAttribute="trailing" id="SsC-Gy-0Sa"/>
-                                    <constraint firstItem="Snd-fL-PJF" firstAttribute="top" secondItem="mcY-rf-2Hf" secondAttribute="top" constant="6" id="XsS-ge-wcJ"/>
-                                    <constraint firstItem="Snd-fL-PJF" firstAttribute="centerY" secondItem="mcY-rf-2Hf" secondAttribute="centerY" id="bMl-DC-7Aj"/>
+                                    <constraint firstItem="Snd-fL-PJF" firstAttribute="leading" secondItem="mcY-rf-2Hf" secondAttribute="leading" id="Uym-71-dfD"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vt9-8o-c7e" secondAttribute="trailing" id="iIX-uz-Qjr"/>
                                     <constraint firstItem="Vt9-8o-c7e" firstAttribute="top" secondItem="mcY-rf-2Hf" secondAttribute="top" constant="13" id="jUN-J9-xSd"/>
-                                    <constraint firstItem="Vt9-8o-c7e" firstAttribute="leading" secondItem="Snd-fL-PJF" secondAttribute="trailing" constant="24" id="vgb-T3-Rw2"/>
-                                    <constraint firstItem="Snd-fL-PJF" firstAttribute="leading" secondItem="mcY-rf-2Hf" secondAttribute="leading" id="xoL-GD-HAd"/>
+                                    <constraint firstItem="Vt9-8o-c7e" firstAttribute="centerY" secondItem="mcY-rf-2Hf" secondAttribute="centerY" id="uMp-LL-He6"/>
+                                    <constraint firstItem="Snd-fL-PJF" firstAttribute="centerY" secondItem="mcY-rf-2Hf" secondAttribute="centerY" id="yG8-mT-Db9"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Power Animal has much to teach you, but you must prepare yourself mentally and spiritually first." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kF2-Zf-Z4P">
@@ -165,26 +160,27 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Xfk-68-wS1" firstAttribute="bottom" secondItem="QZT-7a-vbz" secondAttribute="bottom" constant="56" id="15h-Be-JCd"/>
                             <constraint firstItem="kF2-Zf-Z4P" firstAttribute="trailing" secondItem="MVc-n7-Nhu" secondAttribute="trailing" id="2lu-Jd-fVN"/>
                             <constraint firstItem="XaF-yj-MTm" firstAttribute="trailing" secondItem="Xfk-68-wS1" secondAttribute="trailing" id="2te-PY-heh"/>
                             <constraint firstItem="Hht-0s-kNI" firstAttribute="top" secondItem="XaF-yj-MTm" secondAttribute="bottom" constant="81" id="3IS-pI-lUZ"/>
                             <constraint firstItem="MVc-n7-Nhu" firstAttribute="top" secondItem="XaF-yj-MTm" secondAttribute="bottom" constant="23" id="5i5-VY-tWE"/>
+                            <constraint firstItem="QZT-7a-vbz" firstAttribute="leading" secondItem="Xfk-68-wS1" secondAttribute="leading" constant="96" id="65o-3L-BTu"/>
                             <constraint firstItem="XaF-yj-MTm" firstAttribute="trailing" secondItem="Xfk-68-wS1" secondAttribute="trailing" id="6Yy-uY-bYN"/>
                             <constraint firstItem="kF2-Zf-Z4P" firstAttribute="trailing" secondItem="Hht-0s-kNI" secondAttribute="trailing" id="6kK-MI-cLW"/>
-                            <constraint firstItem="QZT-7a-vbz" firstAttribute="leading" secondItem="Xfk-68-wS1" secondAttribute="leading" constant="96" id="7NP-o8-S6k"/>
                             <constraint firstItem="XaF-yj-MTm" firstAttribute="leading" secondItem="Xfk-68-wS1" secondAttribute="leading" id="7qb-B8-9HU"/>
                             <constraint firstItem="XaF-yj-MTm" firstAttribute="leading" secondItem="Xfk-68-wS1" secondAttribute="leading" id="DPs-qw-F41"/>
                             <constraint firstItem="kF2-Zf-Z4P" firstAttribute="leading" secondItem="Hht-0s-kNI" secondAttribute="leading" id="Emv-UH-W7l"/>
                             <constraint firstItem="mcY-rf-2Hf" firstAttribute="centerX" secondItem="XaF-yj-MTm" secondAttribute="centerX" id="GHx-Wd-bjT"/>
-                            <constraint firstItem="QZT-7a-vbz" firstAttribute="top" secondItem="mcY-rf-2Hf" secondAttribute="bottom" constant="23" id="Hvt-St-ubl"/>
+                            <constraint firstItem="QZT-7a-vbz" firstAttribute="centerX" secondItem="mcY-rf-2Hf" secondAttribute="centerX" id="NJ7-vW-Tw9"/>
                             <constraint firstItem="XaF-yj-MTm" firstAttribute="top" secondItem="Z0n-eG-VGr" secondAttribute="top" id="SX5-mH-H5q"/>
                             <constraint firstItem="mcY-rf-2Hf" firstAttribute="leading" secondItem="Xfk-68-wS1" secondAttribute="leading" constant="48" id="TlD-wb-SUv"/>
                             <constraint firstItem="kF2-Zf-Z4P" firstAttribute="leading" secondItem="MVc-n7-Nhu" secondAttribute="leading" id="WKF-un-Nzd"/>
                             <constraint firstItem="XaF-yj-MTm" firstAttribute="leading" secondItem="Xfk-68-wS1" secondAttribute="leading" id="WSQ-IZ-LSo"/>
                             <constraint firstItem="MVc-n7-Nhu" firstAttribute="leading" secondItem="Xfk-68-wS1" secondAttribute="leading" constant="64" id="dsz-r3-Yej"/>
-                            <constraint firstItem="Xfk-68-wS1" firstAttribute="bottom" secondItem="QZT-7a-vbz" secondAttribute="bottom" constant="56" id="e3d-Zm-0B6"/>
                             <constraint firstItem="mcY-rf-2Hf" firstAttribute="top" secondItem="kF2-Zf-Z4P" secondAttribute="bottom" constant="8" symbolic="YES" id="fbi-gR-HeR"/>
                             <constraint firstItem="kF2-Zf-Z4P" firstAttribute="top" secondItem="MVc-n7-Nhu" secondAttribute="bottom" constant="58" id="g2f-9P-A3t"/>
+                            <constraint firstItem="QZT-7a-vbz" firstAttribute="top" secondItem="mcY-rf-2Hf" secondAttribute="bottom" constant="23" id="h8u-QL-B1A"/>
                             <constraint firstItem="mcY-rf-2Hf" firstAttribute="top" secondItem="Z0n-eG-VGr" secondAttribute="top" constant="429" id="jyJ-ET-98d"/>
                             <constraint firstItem="XaF-yj-MTm" firstAttribute="trailing" secondItem="Xfk-68-wS1" secondAttribute="trailing" id="lby-wl-Av6"/>
                             <constraint firstAttribute="bottom" secondItem="mcY-rf-2Hf" secondAttribute="bottom" constant="146" id="o8r-ov-R3G"/>
@@ -192,7 +188,6 @@
                             <constraint firstItem="XaF-yj-MTm" firstAttribute="top" secondItem="Z0n-eG-VGr" secondAttribute="top" id="wrX-iZ-zVy"/>
                             <constraint firstItem="XaF-yj-MTm" firstAttribute="top" secondItem="Z0n-eG-VGr" secondAttribute="top" id="y2P-Ql-PSV"/>
                             <constraint firstItem="Hht-0s-kNI" firstAttribute="centerX" secondItem="mcY-rf-2Hf" secondAttribute="centerX" id="zFn-SN-f6a"/>
-                            <constraint firstItem="QZT-7a-vbz" firstAttribute="centerX" secondItem="mcY-rf-2Hf" secondAttribute="centerX" id="zrQ-5y-HM8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Xfk-68-wS1"/>
                     </view>
@@ -201,44 +196,112 @@
             </objects>
             <point key="canvasLocation" x="789.60000000000002" y="117.39130434782609"/>
         </scene>
-        <!--View Controller-->
+        <!--The Forest-->
         <scene sceneID="jF3-24-APN">
             <objects>
-                <viewController id="bkc-QJ-9W7" sceneMemberID="viewController">
+                <viewController restorationIdentifier="TheForest" storyboardIdentifier="TheForest" id="bkc-QJ-9W7" customClass="TheForest" customModule="Power_Animals_Unleashed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J9Q-6M-RdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2O-3X-BJD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <state key="normal" backgroundImage="forestofspirits"/>
+                                <connections>
+                                    <action selector="forestClick:" destination="bkc-QJ-9W7" eventType="touchUpInside" id="7vn-Bq-CTZ"/>
+                                    <segue destination="Jo2-5M-8Cn" kind="show" id="Ve2-Af-423"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Q2O-3X-BJD" firstAttribute="bottom" secondItem="WCn-vs-LwS" secondAttribute="bottom" id="3hD-0y-czk"/>
+                            <constraint firstItem="Q2O-3X-BJD" firstAttribute="leading" secondItem="WCn-vs-LwS" secondAttribute="leading" id="74g-Wh-vux"/>
+                            <constraint firstItem="Q2O-3X-BJD" firstAttribute="top" secondItem="J9Q-6M-RdC" secondAttribute="top" id="DGr-26-t6y"/>
+                            <constraint firstItem="Q2O-3X-BJD" firstAttribute="trailing" secondItem="WCn-vs-LwS" secondAttribute="trailing" id="wqJ-Af-61v"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WCn-vs-LwS"/>
                     </view>
+                    <connections>
+                        <outlet property="forestEnable" destination="Q2O-3X-BJD" id="Y7z-wX-Nep"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jAP-Bs-gMp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1586" y="136"/>
+            <point key="canvasLocation" x="1657" y="118"/>
         </scene>
-        <!--View Controller-->
+        <!--Power Animal-->
         <scene sceneID="R4V-5b-gtv">
             <objects>
-                <viewController id="Jo2-5M-8Cn" sceneMemberID="viewController">
+                <viewController restorationIdentifier="PowerAnimal" storyboardIdentifier="PowerAnimal" id="Jo2-5M-8Cn" customClass="PowerAnimal" customModule="Power_Animals_Unleashed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XMj-GL-luH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="irg-bM-LKW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="207"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Breathe in deep and let the spirit of animal fill you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOr-2f-Fs1">
+                                <rect key="frame" x="32" y="235" width="311" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="311" id="Kv7-AO-Uhk"/>
+                                    <constraint firstAttribute="height" constant="72" id="VpZ-Rf-uO3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLM-3k-SkH">
+                                <rect key="frame" x="157" y="606" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="signout:" destination="Jo2-5M-8Cn" eventType="touchUpInside" id="aGa-Jv-0pk"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="bUq-6y-6Nt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBO-ZC-si2">
+                                <rect key="frame" x="123" y="437" width="128" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Try Again">
+                                    <color key="titleColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bkc-QJ-9W7" kind="show" id="r7O-sc-GXV"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="irg-bM-LKW" firstAttribute="leading" secondItem="vNB-ye-Wwe" secondAttribute="leading" id="Fsm-5l-cn3"/>
+                            <constraint firstItem="jOr-2f-Fs1" firstAttribute="top" secondItem="irg-bM-LKW" secondAttribute="bottom" constant="28" id="dXk-e5-yqs"/>
+                            <constraint firstItem="irg-bM-LKW" firstAttribute="top" secondItem="XMj-GL-luH" secondAttribute="top" id="dvD-bg-AbY"/>
+                            <constraint firstItem="jOr-2f-Fs1" firstAttribute="centerX" secondItem="XMj-GL-luH" secondAttribute="centerX" id="lZj-nb-llh"/>
+                            <constraint firstItem="irg-bM-LKW" firstAttribute="trailing" secondItem="vNB-ye-Wwe" secondAttribute="trailing" id="qdN-vl-Up9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vNB-ye-Wwe"/>
                     </view>
+                    <connections>
+                        <outlet property="animalImage" destination="irg-bM-LKW" id="QBR-Zx-LFp"/>
+                        <outlet property="breatheIn" destination="jOr-2f-Fs1" id="4lh-cU-dii"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ud-r1-EYd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2110" y="116"/>
+            <point key="canvasLocation" x="2500" y="116.49175412293854"/>
         </scene>
     </scenes>
     <resources>
         <image name="button BG" width="370" height="140"/>
-        <image name="facebookbutton2x" width="252" height="48"/>
+        <image name="forestofspirits" width="375" height="667"/>
         <image name="googlebutton2x" width="252" height="48"/>
         <image name="play button" width="152" height="152"/>
         <image name="power animals unleashed logo" width="462" height="96"/>
         <image name="waterfalls-2565995_1280" width="1280" height="681"/>
         <image name="yak logo" width="750" height="577"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="r7O-sc-GXV"/>
+    </inferredMetricsTieBreakers>
 </document>

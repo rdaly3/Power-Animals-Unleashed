@@ -16,7 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     var window: UIWindow?
 
     
-    
+    override init() {
+        super.init()
+        FirebaseApp.configure()
+        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+        GIDSignIn.sharedInstance().delegate = self
+        // not really needed unless you really need it FIRDatabase.database().persistenceEnabled = true
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -45,12 +51,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-    func applicationDidFinishLaunching(_ application: UIApplication) {
+    func applicationDidFinishLaunchingWithOptions(_ application: UIApplication) {
         // Use Firebase library to configure APIs
-        FirebaseApp.configure()
+        print("firebase configured")
         
-        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
-        GIDSignIn.sharedInstance().delegate = self
+       
     }
     
     @available(iOS 9.0, *)
@@ -69,7 +74,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
-        // ...
+       print("entering didsigninfunction")
         if let error = error {
             print("There was an error signing in: \(error)")
             return
@@ -84,14 +89,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                 print("There was an error authenticating: \(error)")
                 return
             }
-            // User is signed in
-            // ...
+            print("we've got delegate sign in!")
+            
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "EnterTheForest")
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
+            
         }
     }
     
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
         // Perform any operations when the user disconnects from app here.
-        // ...
+        GIDSignIn.sharedInstance().signOut()
     }
     
     
